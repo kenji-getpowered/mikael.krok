@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Mikael KROK - Inégnieur collaboratif et Scrum Master enthousiaste </title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -13,26 +13,23 @@ body {font-size:16px;}
 .w3-half img:hover{opacity:1}
 </style>
 <body>
-
   <!-- Sidebar/menu -->
   <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
     <div class="w3-container">
-      <h3 class="w3-padding-64"><b>Mikael KROK</b></h3>
+      <h3 class="w3-padding-small"><b>Mikael KROK</b></h3>
+      <hr style="width:50px;border:5px solid white" class="w3-round">
     </div>
     <div class="w3-bar-block">
       <a href="/" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
       <!-- Show by fixed links -->
-      <a href="#cv" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">CV</a>
-      <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">github</a>
-      <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Retrospective Starter Kit</a>
+      <a href="https://www.linkedin.com/in/mika%C3%ABl-krok-60903ab/" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">LinkedIn</a>
+      <a href="http://github.com/kenji-getpowered/" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">github</a>
+      <a href="http://retrospective-starter-kit.tk/" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Retrospective Starter Kit</a>
+
       <!-- Show all articles -->
       {% for post in site.posts %}
-        <a href="{{ post.url }}"  onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">{{ post.title }}</a>
-      {% endfor %}
-      <!-- Show by category -->
-      {% for category in site.categories %}
-      <a href="{{category.url}}" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">{{category|first}}</a>
+      <a href="{{ post.url }}"  onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">{{ post.title }}</a>
       {% endfor %}
 
     </div>
@@ -80,4 +77,11 @@ body {font-size:16px;}
 </script>
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.1.0/js/md5.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+<script src="/js/blog.js"></script>
 </html>
