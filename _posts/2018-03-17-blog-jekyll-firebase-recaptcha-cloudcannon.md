@@ -17,7 +17,3 @@ Copier coller le fichier index.html et le d&eacute;placer dans le dossier \_layo
 Retirer le contenu principal et ajouter la balise&nbsp; {{content}}
 
 Retirer le contenu entre les balises et et ajouter les lignes suivantes
-
-{code}
-
-&nbsp; &nbsp; &nbsp; {% for post in site.posts %}<br>&nbsp; &nbsp; &nbsp; &lt;a href="{{ post.url }}" &nbsp;onclick="w3\_close()" class="w3-bar-item w3-button w3-hover-white"&gt;{{ post.title }}&lt;/a&gt;<br>&nbsp; &nbsp; &nbsp; {% endfor %}<br>{code}
